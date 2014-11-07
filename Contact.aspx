@@ -4,12 +4,9 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
-     <form id="form1" runat="server">
 
-        <!-- Check to see if you are in postback.  If not, display the contact form. -->
-        <% If Not IsPostBack Then%>
-
-        Your email address:<br />
+     <!-- Check to see if you are in postback.  If not, display the contact form. -->
+        <% If Not IsPostBack Then%>Your email address:<br />
         <asp:TextBox ID="senderAddress" runat="server"></asp:TextBox>
         <br />
         <br />
@@ -20,7 +17,7 @@
         
         <br />
         <br />
-        <asp:Button ID="sendMail" runat="server" Text="Send" />
+        <asp:Button ID="btn_send" runat="server" Text="Send Message" />
 
         <!-- If you are in postback, display the confirmation label. -->
         <%Else%>
@@ -30,7 +27,7 @@
         <!-- End your 'If' statement. -->
         <%End If%>
 
-    </form>
+    
 
 </asp:Content>
 

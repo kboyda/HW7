@@ -31,11 +31,11 @@
 
         <div id="menu">
             <ul id="nav">
-                <li><a href="./Default.aspx">Home</a></li>
-                <li><a href="./About.aspx">About Us</a></li>
-                <li><a href="./NewPokemon.aspx">Add Your Favorite Pokemon!</a></li>
-                <li><a href="./Contact.aspx">Contact Us</a></li>
-                <li><a href="./search.aspx">Search</a></li>
+                <li><a href="HW7/Default.aspx">Home</a></li>
+                <li><a href="HW7/About.aspx">About Us</a></li>
+                <li><a href="HW7/Contact.aspx">Contact Us</a></li>
+                <li><a href="HW7/search.aspx">Search</a></li>
+                <li><a href="login/login.aspx">Login</a></li>
             </ul>
         </div>
 

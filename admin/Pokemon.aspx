@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">Pokemon Database - Pokemon Details
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:db_kboyda_HW7.1 %>" DeleteCommand="DELETE FROM [kboyda_HW7.1] WHERE [id] = @id" InsertCommand="INSERT INTO [kboyda_HW7.1] ([name], [type], [weakness], [evolution_level], [height], [weight]) VALUES (@name, @type, @weakness, @evolution_level, @height, @weight)" SelectCommand="SELECT * FROM [kboyda_HW7.1]" UpdateCommand="UPDATE [kboyda_HW7.1] SET [name] = @name, [type] = @type, [weakness] = @weakness, [evolution_level] = @evolution_level, [height] = @height, [weight] = @weight WHERE [id] = @id">
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:db_kboyda_HW7.1 %>" DeleteCommand="DELETE FROM [kboyda_HW7.1] WHERE [id] = @id" InsertCommand="INSERT INTO [kboyda_HW7.1] ([name], [type], [weakness], [evolution_level], [height], [weight]) VALUES (@name, @type, @weakness, @evolution_level, @height, @weight)" SelectCommand="SELECT * FROM [kboyda_HW7.1] WHERE ([id] = @id)" UpdateCommand="UPDATE [kboyda_HW7.1] SET [name] = @name, [type] = @type, [weakness] = @weakness, [evolution_level] = @evolution_level, [height] = @height, [weight] = @weight WHERE [id] = @id">
         <DeleteParameters>
             <asp:Parameter Name="id" Type="Int32" />
         </DeleteParameters>
@@ -15,6 +15,9 @@
             <asp:Parameter Name="height" Type="String" />
             <asp:Parameter Name="weight" Type="String" />
         </InsertParameters>
+        <SelectParameters>
+            <asp:QueryStringParameter Name="id" QueryStringField="id" Type="Int32" />
+        </SelectParameters>
         <UpdateParameters>
             <asp:Parameter Name="name" Type="String" />
             <asp:Parameter Name="type" Type="String" />

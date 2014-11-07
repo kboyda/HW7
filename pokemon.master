@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>
+    <title>Pokemon Database
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
     </title>
@@ -12,26 +12,33 @@
 </head>
 <body>
     <form id="form1" runat="server">
+
     <div id="container">
+        
+        <div id="left_header">
+            <img src="css/pokeball_icon.gif" height="150px" />
+        </div>
+
         <div id="header">
-            <h1>Basic Pokemon Pokedex</h1>
+            <br />
+            <h1>Pokemon Database</h1>
+            <h3>Learn about your favorite pokemon!</h3>
         </div>
 
         <div id="right_header">
-
+            <img src="css/pokeball_icon.gif" height="150px" />
         </div>
 
         <div id="menu">
             <ul id="nav">
                 <li><a href="./Default.aspx">Home</a></li>
                 <li><a href="./About.aspx">About Us</a></li>
+                <li><a href="./NewPokemon.aspx">Add Your Favorite Pokemon!</a></li>
                 <li><a href="./Contact.aspx">Contact Us</a></li>
             </ul>
         </div>
 
         <div id="main">
-
-        
             <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
         
             </asp:ContentPlaceHolder>

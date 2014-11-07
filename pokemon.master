@@ -35,6 +35,7 @@
                 <li><a href="./About.aspx">About Us</a></li>
                 <li><a href="./NewPokemon.aspx">Add Your Favorite Pokemon!</a></li>
                 <li><a href="./Contact.aspx">Contact Us</a></li>
+                <li><a href="./search.aspx">Search</a></li>
             </ul>
         </div>
 

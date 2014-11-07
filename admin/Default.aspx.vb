@@ -1,5 +1,5 @@
 ﻿
-Partial Class Pokemon
+Partial Class _Default
     Inherits System.Web.UI.Page
-   
+
 End Class

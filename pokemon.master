@@ -16,7 +16,7 @@
     <div id="container">
         
         <div id="left_header">
-            <img src="css/pokeball_icon.gif" height="150px" />
+            &nbsp;<asp:Image ID="logo1" runat="server" Height="150px" ImageUrl="~/css/pokeball_icon.gif" />
         </div>
 
         <div id="header">
@@ -26,16 +26,17 @@
         </div>
 
         <div id="right_header">
-            <img src="css/pokeball_icon.gif" height="150px" />
-        </div>
+            <asp:Image ID="logo2" runat="server" Height="150px" ImageUrl="~/css/pokeball_icon.gif" />
+&nbsp;</div>
 
         <div id="menu">
             <ul id="nav">
-                <li><a href="HW7/Default.aspx">Home</a></li>
-                <li><a href="HW7/About.aspx">About Us</a></li>
-                <li><a href="HW7/Contact.aspx">Contact Us</a></li>
-                <li><a href="HW7/search.aspx">Search</a></li>
-                <li><a href="login/login.aspx">Login</a></li>
+                <li><asp:HyperLink ID="linkHome" runat="server" NavigateUrl="~/Default.aspx">Home</asp:HyperLink></li>
+                <li><asp:HyperLink ID="linkAbout" runat="server" NavigateUrl="~/About.aspx">About Us</asp:HyperLink></li>
+                <li><asp:HyperLink ID="linkContact" runat="server" NavigateUrl="~/Contact.aspx">Contact Us</asp:HyperLink></li>
+                <li><asp:HyperLink ID="linkSearch" runat="server" NavigateUrl="~/search.aspx">Search</asp:HyperLink></li>
+                <li><asp:HyperLink ID="linkLogin" runat="server" NavigateUrl="~/login/login.aspx">Login</asp:HyperLink></li>
+                
             </ul>
         </div>
 

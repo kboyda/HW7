@@ -32,6 +32,7 @@
         <div id="menu">
             <ul id="nav">
                 <li><asp:HyperLink ID="linkHome" runat="server" NavigateUrl="~/Default.aspx">Home</asp:HyperLink></li>
+                <li><asp:HyperLink ID="LinkAll" runat="server" NavigateUrl="~/ViewAll.aspx">View All</asp:HyperLink></li>
                 <li><asp:HyperLink ID="linkAbout" runat="server" NavigateUrl="~/About.aspx">About Us</asp:HyperLink></li>
                 <li><asp:HyperLink ID="linkContact" runat="server" NavigateUrl="~/Contact.aspx">Contact Us</asp:HyperLink></li>
                 <li><asp:HyperLink ID="linkSearch" runat="server" NavigateUrl="~/search.aspx">Search</asp:HyperLink></li>

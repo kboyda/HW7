@@ -30,9 +30,9 @@
              <EditRowStyle BackColor="White" />
              <FieldHeaderStyle BackColor="Blue" foreColor="White" Font-Bold="True" />
     <Fields>
-        <asp:BoundField DataField="name" HeaderText="Name" SortExpression="name" />
-        <asp:BoundField DataField="type" HeaderText="Type" SortExpression="type" />
-        <asp:BoundField DataField="weakness" HeaderText="Weakness" SortExpression="weakness" />
+        <asp:BoundField DataField="name" HeaderText="Name*" SortExpression="name" />
+        <asp:BoundField DataField="type" HeaderText="Type*" SortExpression="type" />
+        <asp:BoundField DataField="weakness" HeaderText="Weakness*" SortExpression="weakness" />
         <asp:BoundField DataField="evolution_level" HeaderText="Evolution Level" SortExpression="evolution_level" />
         <asp:BoundField DataField="height" HeaderText="Height" SortExpression="height" />
         <asp:BoundField DataField="weight" HeaderText="Weight" SortExpression="weight" />
